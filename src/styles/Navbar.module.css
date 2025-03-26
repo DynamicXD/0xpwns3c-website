@@ -1,0 +1,16 @@
+/* Navbar.module.css */
+
+/* Red glow effect for hover */
+.hover\:glow-red:hover {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6),
+      0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+    transition: text-shadow 0s ease-in-out;
+}
+
+/* Optional: Add a subtle glow to the navbar itself */
+.glass-navbar {
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    backdrop-filter: blur(20px); /* Adjust blur intensity */
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Optional: Add a border */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); /* Optional: Add a shadow */
+}
