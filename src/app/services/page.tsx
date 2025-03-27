@@ -3,6 +3,11 @@
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
 import FuzzyText from '@/components/FuzzyText';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Services | 0xpwns3c',
+};
 
 export default function ServicesPage() {
   const services = [

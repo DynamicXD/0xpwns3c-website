@@ -2,6 +2,11 @@ import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
 import FuzzyText from '@/components/FuzzyText';
 import { useMemo } from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About | 0xpwns3c',
+};
 
 export default function AboutPage() {
   const teamMembers = useMemo(() => {
