@@ -16,7 +16,6 @@ export default function ContactPage() {
     encrypted: false
   });
 
-  // @ts-ignore
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData(prev => ({
