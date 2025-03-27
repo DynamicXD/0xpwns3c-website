@@ -269,7 +269,7 @@ export default function BlogPage() {
                                 <div className="text-center py-6 sm:py-12">
                                     <div className="text-3xl sm:text-5xl mb-3 sm:mb-4">🔐</div>
                                     <p className="font-mono text-sm sm:text-base text-yellow-400 mb-4 sm:mb-6">
-                                        This content requires Level 4 clearance. Use terminal command "decrypt all" to access.
+                                        {'This content requires Level 4 clearance. Use terminal command "decrypt all" to access.'}
                                     </p>
                                     <div className="font-mono text-xs text-gray-400 animate-pulse">
                                         [AES-256 ENCRYPTED | QUANTUM-RESISTANT]

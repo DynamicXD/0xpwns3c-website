@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
 import FuzzyText from '@/components/FuzzyText';
-import type { Metadata } from 'next';
 
 export default function Home() {
   const [activeFeature, setActiveFeature] = useState(0);
