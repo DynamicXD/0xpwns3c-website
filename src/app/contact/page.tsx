@@ -16,13 +16,15 @@ export default function ContactPage() {
     encrypted: false
   });
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+    const checked = type === 'checkbox' && (e.target as HTMLInputElement).checked;
     setFormData(prev => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
   };
+  
 
   return (
     <main className="relative min-h-screen flex flex-col items-center bg-black text-white overflow-hidden px-4 sm:px-6">
