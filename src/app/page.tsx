@@ -31,7 +31,7 @@ export default function Home() {
       setActiveFeature((prev) => (prev + 1) % features.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [features.length]);
 
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden px-4">

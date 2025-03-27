@@ -182,7 +182,7 @@ const FuzzyText: React.FC<FuzzyTextProps> = ({
           canvas.removeEventListener("touchend", handleTouchEnd);
         }
       };
-
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (canvas as any).cleanupFuzzyText = cleanup;
     };
 
@@ -191,9 +191,11 @@ const FuzzyText: React.FC<FuzzyTextProps> = ({
     return () => {
       isCancelled = true;
       window.cancelAnimationFrame(animationFrameId);
+      /* eslint-disable @typescript-eslint/no-explicit-any */
       if (canvas && (canvas as any).cleanupFuzzyText) {
         (canvas as any).cleanupFuzzyText();
       }
+      /* eslint-enable @typescript-eslint/no-explicit-any */
     };
   }, [
     children,
