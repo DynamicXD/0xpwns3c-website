@@ -119,7 +119,7 @@ export default function ServicesPage() {
         {/* Services grid - 1 column on mobile, 2 on tablet, 4 on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => {
-            const hover = hoverClasses[service.color];
+            const hover = hoverClasses[service.color as keyof typeof hoverClasses];
             return (
               <div 
                 key={index}
