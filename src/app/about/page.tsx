@@ -208,7 +208,7 @@ export default function AboutPage() {
               speed={120}
               maxIterations={4}
               characters="01x>|<#@!?"
-              revealDirection="right"
+              revealDirection="end"
             />
           </span>
         </p>
