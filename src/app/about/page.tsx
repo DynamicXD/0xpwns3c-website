@@ -68,7 +68,7 @@ export default function AboutPage() {
                 speed={150}
                 maxIterations={5}
                 characters="$#@!?"
-                revealDirection="left"
+                revealDirection="start"
               />
             </h2>
             <p className="text-xs sm:text-base text-gray-300 font-mono leading-relaxed">
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 speed={150}
                 maxIterations={5}
                 characters="$#@!?"
-                revealDirection="left"
+                revealDirection="start"
               />
             </h2>
             <ul className="list-disc list-inside text-xs sm:text-base text-gray-300 font-mono space-y-1 sm:space-y-2">
@@ -141,7 +141,7 @@ export default function AboutPage() {
               speed={150}
               maxIterations={5}
               characters="$#@!?"
-              revealDirection="left"
+              revealDirection="start"
             />
           </h2>
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
